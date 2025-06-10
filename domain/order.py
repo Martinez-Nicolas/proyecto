@@ -10,5 +10,19 @@ class Order:
         self.delivered_at = None
         self.cost = 0
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "client_name": self.client.name,
+            "client_id": self.client.id,
+            "origin": str(self.origin),
+            "destination": str(self.destination),
+            "priority": self.priority,
+            "status": self.status,
+            "created_at": self.created_at,
+            "delivered_at": self.delivered_at,
+            "cost": self.cost,
+        }
+
     def __repr__(self):
         return f"Order({self.id}, {self.client.id}, from={self.origin}, to={self.destination})"
