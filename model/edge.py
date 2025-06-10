@@ -1,3 +1,4 @@
+# edge.py
 class Edge:
     """Lightweight edge structure for a graph."""
     __slots__ = '_origin', '_destination', '_element'

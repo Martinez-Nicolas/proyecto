@@ -1,3 +1,4 @@
+# vertex.py
 class Vertex:
     """Lightweight vertex structure for a graph."""
     __slots__ = '_element'
