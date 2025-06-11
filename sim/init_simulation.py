@@ -1,6 +1,6 @@
-import random
 from model.graph import Graph
 from domain.client import Client
+import random
 
 def assign_roles(vertices, n_storage, n_charge, n_clients):
     """Assign roles to vertices: storage, charge, client"""
